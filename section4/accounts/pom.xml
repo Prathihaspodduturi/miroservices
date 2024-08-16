@@ -12,6 +12,7 @@
 	<artifactId>accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>accounts</name>
+	<packaging>jar</packaging>
 	<description>Microservice for Accounts</description>
 	<url/>
 	<licenses>
@@ -72,10 +73,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
 	</dependencies>
 
 	<build>

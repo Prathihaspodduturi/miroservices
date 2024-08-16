@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c4042706-9639-4398-b68f-aadc49b8be25" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../PrathihasSPlitwise_Backend_Microservices/git-localconfig-repo/limits-service.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../section2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../section2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../section2/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section2/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/section2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/LoansApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/audit/AuditAwareImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/constants/LoansConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/controller/LoansController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/dto/ErrorResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/dto/LoansDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/dto/ResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/entity/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/entity/Loans.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/exception/LoanAlreadyExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/mapper/LoansMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/repository/LoansRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/service/ILoansService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/com/eazybytes/loans/service/impl/LoansServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/test-classes/com/eazybytes/loans/LoansApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="usePluginRegistry" value="true" />
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2kOQaWo4otbHjWFYSHIbkx2bSVx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/microservices/section6/v1-springboot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.14326647",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.eazybytes.accounts.dto" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.All in section2">
+    <configuration name="All in section2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="section2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="accounts" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.accounts.AccountsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cards" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.cards.CardsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="loans" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.loans.LoansApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in section2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4042706-9639-4398-b68f-aadc49b8be25" name="Changes" comment="" />
+      <created>1723152206386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723152206386</updated>
+      <workItem from="1723152207381" duration="13071000" />
+      <workItem from="1723166739541" duration="384000" />
+      <workItem from="1723167141693" duration="179000" />
+      <workItem from="1723167342949" duration="20000" />
+      <workItem from="1723167465166" duration="571000" />
+      <workItem from="1723168063530" duration="994000" />
+      <workItem from="1723235623653" duration="98000" />
+      <workItem from="1723235755068" duration="45000" />
+      <workItem from="1723235815948" duration="52000" />
+      <workItem from="1723235886864" duration="690000" />
+      <workItem from="1723236620450" duration="1854000" />
+      <workItem from="1723239490049" duration="21000" />
+      <workItem from="1723239520871" duration="43000" />
+      <workItem from="1723239580975" duration="9000" />
+      <workItem from="1723239605376" duration="3465000" />
+      <workItem from="1723493137455" duration="5189000" />
+      <workItem from="1723500567028" duration="10000" />
+      <workItem from="1723501412488" duration="3716000" />
+      <workItem from="1723591787704" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
