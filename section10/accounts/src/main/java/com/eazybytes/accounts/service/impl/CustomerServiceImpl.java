@@ -13,20 +13,28 @@ import com.eazybytes.accounts.service.ICustomerService;
 import com.eazybytes.accounts.service.client.CardsFeignClient;
 import com.eazybytes.accounts.service.client.LoansFeignClient;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
 public class CustomerServiceImpl implements ICustomerService {
 
+    @Autowired
     private AccountsRepository accountsRepository;
 
+    @Autowired
     private CustomerRepository customerRepository;
 
+    @Autowired
+    @Qualifier("com.eazybytes.accounts.service.client.CardsFeignClient")
     private CardsFeignClient cardsFeignClient;
 
+    @Autowired
+    @Qualifier("com.eazybytes.accounts.service.client.LoansFeignClient")
     private LoansFeignClient loansFeignClient;
+
 
     @Override
     public CustomerDetailsDto fetchCustomerDetails(String mobileNumber, String correlationId) {
@@ -44,10 +52,14 @@ public class CustomerServiceImpl implements ICustomerService {
 
 
         ResponseEntity<LoansDto> loansDtoResponseEntity = loansFeignClient.fetchLoanDetails(correlationId, mobileNumber);
-        customerDetailsDto.setLoansDto(loansDtoResponseEntity.getBody());
+        if(loansDtoResponseEntity !=  null) {
+            customerDetailsDto.setLoansDto(loansDtoResponseEntity.getBody());
+        }
 
         ResponseEntity<CardsDto> cardsDtoResponseEntity = cardsFeignClient.fetchCardDetails(correlationId, mobileNumber);
-        customerDetailsDto.setCardsDto(cardsDtoResponseEntity.getBody());
+        if(cardsDtoResponseEntity != null) {
+            customerDetailsDto.setCardsDto(cardsDtoResponseEntity.getBody());
+        }
 
         return customerDetailsDto;
     }

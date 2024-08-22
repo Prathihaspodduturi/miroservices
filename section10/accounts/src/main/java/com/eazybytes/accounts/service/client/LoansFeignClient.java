@@ -7,12 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 
-/* here "loans" is the name of application registered with Eureka */
-@FeignClient("loans")
+@FeignClient(name="loans",fallback = LoansFallback.class)
 public interface LoansFeignClient {
 
-    @GetMapping(value="/api/fetch", consumes="application/json")
-    public ResponseEntity<LoansDto> fetchLoanDetails(@RequestHeader("eazybank-coorelation-id") String correlationId,
-                                                     @RequestParam String mobileNumber);
-    
+    @GetMapping(value = "/api/fetch",consumes = "application/json")
+    public ResponseEntity<LoansDto> fetchLoanDetails(@RequestHeader("eazybank-correlation-id")
+                                                     String correlationId, @RequestParam String mobileNumber);
+
 }

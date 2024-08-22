@@ -20,6 +20,10 @@ spring:
     show-sql: true
   config:
     import: "optional:configserver:http://localhost:8071/"
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
 
 management:
   endpoints:
@@ -63,3 +67,17 @@ logging:
     com:
       eazybytes:
         accounts: DEBUG
+
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000
+
+#slidewinowsize tells ciruciut breaker to broker atleast 10 requests
+# permittednumberofcallsinhalfopenstate : in half open state it allows 2 requests
+#  failureratethreshold : if atleast 50% requests are failed, then from close to open state
+# waitDurationInOpenState : wait for 10 seconds before moving to half open state
