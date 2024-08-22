@@ -9,7 +9,12 @@ spring:
         locator:
           enabled: false
           lower-case-service-id: true
-
+      httpclient:
+        connect-timeout: 1000
+        response-timeout: 2s
+# httpclient connect - timeout is for how much time this application should wait for the connection with microservice
+# response-timeout - for how much time this application should wait for the response from the microservice
+# The above are global time out 
 
 management:
   endpoints:
