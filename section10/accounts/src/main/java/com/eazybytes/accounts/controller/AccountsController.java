@@ -6,6 +6,7 @@ import com.eazybytes.accounts.dto.CustomerDto;
 import com.eazybytes.accounts.dto.ErrorResponseDto;
 import com.eazybytes.accounts.dto.ResponseDto;
 import com.eazybytes.accounts.service.IAccountsService;
+import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -196,10 +197,18 @@ public class AccountsController {
             )
     }
     )
+    @Retry(name="getBuildInfo", fallbackMethod = "getBuildInfoFallBack")
     @GetMapping("/build-info")
-    public ResponseEntity<String> getJavaVersion() {
+    public ResponseEntity<String> getBuildInfo() {
         return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
     }
+
+    public ResponseEntity<String> getBuildInfoFallBack(Throwable throwable){
+
+        return ResponseEntity.status(HttpStatus.OK).body("0.9");
+
+    }
+
 
     @Operation(
             summary = "Get Java Version",
@@ -220,7 +229,7 @@ public class AccountsController {
     }
     )
     @GetMapping("/java-version")
-    public ResponseEntity<String> getBuildInfo() {
+    public ResponseEntity<String> getJavaVersion() {
         return ResponseEntity.status(HttpStatus.OK).body(environment.getProperty("JAVA_HOME"));
     }
 
