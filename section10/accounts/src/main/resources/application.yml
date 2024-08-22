@@ -97,3 +97,11 @@ resilience4j.retry:
 
 # ignore Exceptions tells retry to do not retry when there is this type of exception happens
 # retry Exceptions tells retry to retry only when there is TimeoutException
+
+resilience4j.ratelimiter:
+  configs:
+    default:
+      timeoutDuration: 1000
+      limitRefreshPeriod: 5000
+      limitForPeriod: 1
+
