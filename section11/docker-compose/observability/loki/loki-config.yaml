@@ -42,5 +42,7 @@ ruler:
     s3:
       bucketnames: loki-ruler
 
-#compactor:
-#  working_directory: /tmp/compactor
+
+# This helps Loki for efficient query by increasing the smaller index chunks of loki into larger
+compactor:
+  working_directory: /tmp/compactor
