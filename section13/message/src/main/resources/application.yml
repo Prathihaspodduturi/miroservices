@@ -8,3 +8,16 @@ spring:
   cloud:
     function:
       definition: email|sms
+    stream:
+      bindings:
+        enailsms-in-0:
+          destination: send-coomunication
+          group: ${spring.application.name}
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 10s
+
+# send-communication is the queue name in the rabbitMQ (user -defined).
