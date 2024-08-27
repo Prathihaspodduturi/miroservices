@@ -268,7 +268,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "prathihas/configserver:s13"
+    image: "prathihas/configserver:s14"
     container_name: configserver-ms
     ports:
       [ "8071:8071" ]
@@ -285,7 +285,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "prathihas/eurekaserver:s13"
+    image: "prathihas/eurekaserver:s14"
     container_name: eurekaserver-ms
     ports:
       [ "8070:8070" ]
@@ -310,7 +310,7 @@ services:
   #Only this registered service names can be used in feignclient
 
   accounts:
-    image: "prathihas/accounts:s13"
+    image: "prathihas/accounts:s14"
     container_name: accounts-ms
     healthcheck:
       test: "curl --fail --silent localhost:8080/actuator/health/readiness | grep UP || exit 1"
@@ -333,7 +333,7 @@ services:
 
 
   loans:
-    image: "prathihas/loans:s13"
+    image: "prathihas/loans:s14"
     container_name: loans-ms
     healthcheck:
       test: "curl --fail --silent localhost:8090/actuator/health/readiness | grep UP || exit 1"
@@ -354,7 +354,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "prathihas/cards:s13"
+    image: "prathihas/cards:s14"
     container_name: cards-ms
     healthcheck:
       test: "curl --fail --silent localhost:9000/actuator/health/readiness | grep UP || exit 1"
@@ -375,7 +375,7 @@ services:
       service: microservice-eureka-config
 
   message:
-    image: "prathihas/message:s13"
+    image: "prathihas/message:s14"
     container_name: message-ms
     depends_on:
       rabbit:
@@ -387,7 +387,7 @@ services:
       service: network-deploy-service
 
   gatewayserver:
-    image: "prathihas/gatewayserver:s13"
+    image: "prathihas/gatewayserver:s14"
     container_name: gatwayserver-ms
     ports:
       [ "8072:8072" ]
