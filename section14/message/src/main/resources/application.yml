@@ -15,12 +15,11 @@ spring:
           group: ${spring.application.name}
         emailsms-out-0:
           destination: communication-sent
+      kafka:
+        binder:
+          brokers:
+            - localhost:9092
 
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-    connection-timeout: 10s
 
-# send-communication is the queue name in the rabbitMQ (user -defined) where message service is listening for the messages.
+
+# if multiple brokers are present then we can assign multiple ports to it.
