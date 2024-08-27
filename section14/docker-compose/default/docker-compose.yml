@@ -377,9 +377,6 @@ services:
   message:
     image: "prathihas/message:s14"
     container_name: message-ms
-    depends_on:
-      rabbit:
-        condition: service_healthy
     environment:
       SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
     extends:
@@ -410,6 +407,9 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
 
+volumes:
+  kafka_data:
+    driver: local
 
 networks:
   eazybank:
