@@ -24,10 +24,13 @@ spring:
     openfeign:
       circuitbreaker:
         enabled: true
+    function:
+      definition: updateCommunication
     stream:
       bindings:
         sendCommunication-out-0:
           destination: send-communication
+
 
   rabbitmq:
     host: localhost
