@@ -28,6 +28,7 @@ spring:
       bindings:
         sendCommunication-out-0:
           destination: send-communication
+
   rabbitmq:
     host: localhost
     port: 5672

@@ -10,9 +10,12 @@ spring:
       definition: email|sms
     stream:
       bindings:
-        enailsms-in-0:
-          destination: send-coomunication
+        emailsms-in-0:
+          destination: send-communication
           group: ${spring.application.name}
+        emailsms-out-0:
+          destination: communication-send
+
   rabbitmq:
     host: localhost
     port: 5672
@@ -20,4 +23,4 @@ spring:
     password: guest
     connection-timeout: 10s
 
-# send-communication is the queue name in the rabbitMQ (user -defined).
+# send-communication is the queue name in the rabbitMQ (user -defined) where message service is listening for the messages.
