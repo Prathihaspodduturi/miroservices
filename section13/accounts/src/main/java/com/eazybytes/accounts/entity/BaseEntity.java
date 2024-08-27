@@ -34,4 +34,7 @@ public class BaseEntity {
     @LastModifiedBy
     @Column(insertable = false)
     private String updatedBy;
+
+    @Column(name = "coomunication_sw")
+    private boolean communicationSw;
 }
