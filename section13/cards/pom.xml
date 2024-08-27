@@ -98,7 +98,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>prathihas/${project.artifactId}:s12</image>
+						<image>prathihas/${project.artifactId}:s13</image>
 					</to>
 				</configuration>
 			</plugin>
