@@ -15,6 +15,8 @@ public class AccountsFunctions {
 
         return accountNumber -> {
           log.info("Updating communication status for the account number: "+accountNumber.toString());
+
+
         };
     }
 }
