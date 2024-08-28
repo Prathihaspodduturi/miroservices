@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment  # Deployment is used to convey to kubernetes that we are deploying
+metadata:
+  name: configserver-deployment  # any name can be given
+  labels:
+    app: configserver  #  
+spec:
+  replicas: 1   # number of instances
+  selector:
+    matchLabels:
+      app: configserver  # ensuring that this are applied to configserver-deployment using label matching - configserver
+  template:
+    metadata:
+      labels:
+        app: configserver
+    spec:
+      containers:
+      - name: configserver
+        image: prathihas/configserver:s14
+        ports:
+        - containerPort: 8071
+---   # this means treat the below as a single yml file    # The below cinfgurations tells where to make it avaialable for outer world or for inner world
+apiVersion: v1
+kind: Service
+metadata:
+  name: configserver
+spec:
+  selector:
+    app: configserver
+  type: LoadBalancer    # exposes the container to outside world
+  ports:
+    - protocol: TCP
+      port: 8071
+      targetPort: 8071
