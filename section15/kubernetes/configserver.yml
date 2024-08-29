@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: configserver
-        image: prathihas/configserver:s14
+        image: prathihas/configserver:s12
         ports:
         - containerPort: 8071
 ---   # this means treat the below as a single yml file    # The below cinfgurations tells where to make it avaialable for outer world or for inner world
