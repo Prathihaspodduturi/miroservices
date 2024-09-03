@@ -26,5 +26,5 @@ appVersion: "1.0.0"
 
 dependencies:
   - name: eazybank-common  # helm chart where the current accounts chart is dependent on eazybank-common
-  version: 0.1.0
-  repository: file://../../eazybamk-common
+    version: 0.1.0
+    repository: file://../../eazybank-common
