@@ -1,6 +1,10 @@
 server:
   port: 8090
 spring:
+  cloud:
+    kubernetes:
+      discovery:
+        all-namespaces: true
   application:
     name: "loans"
   profiles:
@@ -43,16 +47,6 @@ management:
   metrics:
     tags:
       application: ${spring.application.name}
-
-
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetchRegistry: true
-    registerWithEureka: true
-    serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
 
 
 info:
